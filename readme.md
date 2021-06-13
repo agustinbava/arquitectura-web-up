@@ -16,13 +16,13 @@
 - http://localhost:4000/api/teams?team_id=Triunvi
 - http://localhost:4000/api/teams?capitan=Agustin+Bava
 - http://localhost:4000/api/cups
-- localhost:4000/api/cups?recaudacion=1000
+- http://localhost:4000/api/cups?recaudacion=1000
 - http://localhost:4000/api/players
 - http://localhost:4000/api/subscriptions
 - http://localhost:4000/api/teams?team_id=Triunvi
 - To delete - DELETE call:
-- localhost:4000/api/teams/60c582a1cfef9277844a245a
+- http://localhost:4000/api/teams/60c582a1cfef9277844a245a
 - To update PUT call:
-- localhost:4000/api/players/60a98de491051545580a2d75
+- http://localhost:4000/api/players/60a98de491051545580a2d75
 - To create POST call:
-- localhost:4000/api/players
+- http://localhost:4000/api/players
