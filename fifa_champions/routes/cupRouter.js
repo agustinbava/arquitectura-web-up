@@ -14,8 +14,17 @@ function routes(Cup){
     if (req.query.cup_id){
       query.cup_id = req.query.cup_id;
     }
-    if (req.query.capitan){
-      query.capitan = req.query.capitan;
+    if (req.query.fecha_comienzo){
+      query.fecha_comienzo = req.query.fecha_comienzo;
+    }
+    if (req.query.recaudacion){
+      query.recaudacion = req.query.recaudacion;
+    }
+    if (req.query.premio){
+      query.premio = req.query.premio;
+    }
+    if (req.query.consola){
+      query.consola = req.query.consola;
     }
     Cup.find(query , (err, cups) => {
       if(err){

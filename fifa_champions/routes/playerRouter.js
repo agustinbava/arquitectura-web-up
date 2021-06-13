@@ -11,11 +11,14 @@ function routes(Player){
   })
   .get((req, res) => {
     const query = {};
-    if (req.query.player_id){
-      query.player_id = req.query.player_id;
+    if (req.query.dni){
+      query.dni = req.query.dni;
     }
-    if (req.query.capitan){
-      query.capitan = req.query.capitan;
+    if (req.query.NyA){
+      query.NyA = req.query.NyA;
+    }
+    if (req.query.esCapitan){
+      query.esCapitan = req.query.esCapitan;
     }
     Player.find(query , (err, players) => {
       if(err){
@@ -42,8 +45,10 @@ function routes(Player){
     .get((req, res) => { res.json(req.player); })
     .put((req, res) => {
       const {player} = req;
-      player.player_id = req.body.player_id;
-      player.capitan = req.body.capitan;
+      player.dni = req.body.dni;
+      player.NyA = req.body.NyA;
+      player.tel_contacto = req.body.tel_contacto;
+      player.esCapitan = req.body.esCapitan;
       player.save();
       return res.json(player);
       })
